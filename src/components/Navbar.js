@@ -21,11 +21,7 @@ export const Navbar = () => {
 
       <div className="nav2">
         <h2 className="header">audiophile</h2>
-        <img
-          className="cart-icon"
-          src="./images/cart/empty-cart.png"
-          alt="cart-img"
-        />
+        <img alt="cart-icon" src="../images/cart/empty-cart.png" />
       </div>
 
       <div className="nav-desktop">

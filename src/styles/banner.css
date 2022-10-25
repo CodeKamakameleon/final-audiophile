@@ -1,3 +1,32 @@
-.banner {
-  background-image: url(../images/category-headphones/mobile/image-xx99-mark-two.jpg);
+@media screen and (max-width: 680px) {
+  .banner {
+    background-image: url(../images/category-headphones/mobile/image-xx99-mark-two.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* width: screen; */
+    padding: 20px 0 60px 0;
+    letter-spacing: 1px;
+  }
+
+  .xx99-mrk2-btn {
+    padding: 10px 20px 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+  }
+
+  .banner-header1 {
+    letter-spacing: 5px;
+  }
+
+  .banner-body {
+    width: 70%;
+  }
 }

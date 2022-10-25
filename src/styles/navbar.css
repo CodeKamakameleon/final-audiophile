@@ -4,6 +4,7 @@
     flex-direction: row;
     background-color: black;
     color: white;
+    font-weight: 700;
   }
 
   .hamburger {
@@ -17,6 +18,8 @@
     flex-direction: row;
     background-color: black;
     color: white;
+    border-bottom: 1px gray;
+    font-weight: 700;
   }
 
   .nav-desktop {
@@ -27,6 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 20px;
     /* text-align: center; */
   }
 
@@ -39,7 +43,18 @@
   .nav2 {
     display: flex;
     /* flex-direction: row; */
-    justify-content: center;
+
+    justify-content: space-between;
     text-align: center;
+  }
+
+  .header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .cart-icon {
+    color: white;
+    padding-left: 20px;
   }
 }
