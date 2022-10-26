@@ -29,12 +29,13 @@
   .hamburger {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding-right: 20px;
-    /* text-align: center; */
+    text-align: center;
   }
 
   .mobile-nav {
+    display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -43,7 +44,6 @@
   .nav2 {
     display: flex;
     /* flex-direction: row; */
-
     justify-content: space-between;
     text-align: center;
   }
