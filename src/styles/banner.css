@@ -1,18 +1,18 @@
 @media screen and (max-width: 680px) {
   .banner {
-    background-image: url(../images/category-headphones/mobile/image-xx99-mark-two.jpg);
+    background-image: url(../images/home/mobile/image-hero.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: black;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* width: screen; */
+    width: 100%;
     padding: 20px 0 60px 0;
     letter-spacing: 1px;
+    color: white;
   }
 
   .xx99-mrk2-btn {
