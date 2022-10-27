@@ -1,6 +1,7 @@
 @import url("navbar.css");
 @import url("banner.css");
 @import url("shopbar.css");
+@import url("featured.css");
 
 * {
   font-family: "Manrope", sans-serif;
