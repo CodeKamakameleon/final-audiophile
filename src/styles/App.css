@@ -2,6 +2,8 @@
 @import url("banner.css");
 @import url("shopbar.css");
 @import url("featured.css");
+@import url("Closer.css");
+@import url("footer.css");
 
 * {
   font-family: "Manrope", sans-serif;

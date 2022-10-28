@@ -5,6 +5,7 @@
     background-color: black;
     color: white;
     font-weight: 700;
+    border-bottom: 1px;
   }
 
   .hamburger {
@@ -16,6 +17,11 @@
     justify-content: space-between;
     text-align: center;
     width: 100%;
+  }
+
+  .header {
+    /* padding-right: 10px; */
+    padding-left: 20px;
   }
 
   .nav-desktop {
@@ -35,7 +41,7 @@
     max-height: 40px;
     filter: invert(100%);
     padding-top: 15px;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 }
 
@@ -62,11 +68,23 @@
     text-align: center;
   }
 
-  .mobile-nav {
+  .mbl-nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    color: black;
     text-align: center;
     justify-content: center;
+  }
+
+  .nav-card {
+    display: block;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    margin: 0 2px 0 2px;
   }
 
   .nav2 {
@@ -89,6 +107,6 @@
     max-height: 40px;
     filter: invert(100%);
     padding-top: 15px;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 }

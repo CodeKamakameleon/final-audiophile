@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  letter-spacing: 1px;
+}
+
+.footer-header {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  color: white;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.footer-body {
+  text-align: center;
+  align-self: center;
+  width: 75%;
+  color: gray;
+}
+
+.footer-copyright {
+  color: gray;
+  font-weight: bold;
+}

@@ -10,17 +10,23 @@
 .featured-1 {
   align-items: center;
   text-align: center;
+  justify-content: center;
   border-radius: 8px;
   background-color: orange;
   padding: 20px;
+  width: 75%;
 }
 
 .featured-header-1 {
+  /* justify-content: center; */
   color: white;
   font: bold;
-  font-size: x-large;
+  font-size: xx-large;
 }
 .featured-body {
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
   color: white;
   width: 75%;
   align-items: center;
@@ -33,7 +39,7 @@
   border: none;
 }
 
-.zx9-img {
+.featured-1-img {
   width: 50%;
   height: 50%;
 }
@@ -41,14 +47,17 @@
 .featured-2 {
   align-items: center;
   text-align: center;
-  background-color: lightgray;
+  justify-content: center;
+  background-image: url("../images/home/mobile/image-speaker-zx7.jpg");
+  background-size: cover;
   color: black;
   border-radius: 8px;
   margin-top: 20px;
   width: 75%;
+  height: 250px;
 }
 
-.featured-btn-2 {
+.featured-2-btn {
   background-color: lightgray;
   border: 1px solid black;
   padding: 10px 20px 10px 20px;
@@ -56,6 +65,7 @@
 }
 
 .featured-3 {
+  display: flex;
   align-items: center;
   text-align: center;
   background-color: lightgray;
@@ -63,4 +73,26 @@
   border-radius: 8px;
   margin-top: 20px;
   width: 75%;
+}
+
+.featured-3-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.featured-4 {
+  align-items: center;
+  text-align: center;
+  background-color: lightgray;
+  color: black;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.featured-4-btn {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
 }
