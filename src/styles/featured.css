@@ -5,6 +5,7 @@
   justify-content: center;
   padding-top: 20px;
   letter-spacing: 1px;
+  width: 100%;
 }
 
 .featured-1 {
@@ -26,10 +27,10 @@
 .featured-body {
   align-items: center;
   text-align: center;
-  /* justify-content: center; */
+  justify-content: center;
   color: white;
-  width: 75%;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .featured-btn {
@@ -45,7 +46,9 @@
 }
 
 .featured-2 {
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   background-image: url("../images/home/mobile/image-speaker-zx7.jpg");
@@ -53,14 +56,18 @@
   color: black;
   border-radius: 8px;
   margin-top: 20px;
-  width: 75%;
+  width: 78%;
   height: 250px;
+  font-size: x-large;
+  padding-left: 20px;
 }
 
 .featured-2-btn {
-  background-color: lightgray;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   border: 1px solid black;
-  padding: 10px 20px 10px 20px;
+  padding: 12px 25px 12px 25px;
   margin-bottom: 20px;
 }
 
@@ -72,7 +79,7 @@
   color: black;
   border-radius: 8px;
   margin-top: 20px;
-  width: 75%;
+  width: 83%;
 }
 
 .featured-3-img {
@@ -81,18 +88,51 @@
 }
 
 .featured-4 {
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   text-align: center;
+  flex-direction: column;
   background-color: lightgray;
   color: black;
   border-radius: 8px;
   margin-top: 20px;
-  width: 75%;
+  width: 78%;
+  padding: 20px 0 20px 0;
+  font-size: x-large;
+  padding-left: 20px;
 }
 
 .featured-4-btn {
+  display: flex;
+  align-items: flex-start;
   background-color: lightgray;
   border: 1px solid black;
   padding: 10px 20px 10px 20px;
   margin-bottom: 20px;
+}
+
+.featured-3-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1280px) {
+  .featured-1 {
+    width: 75%;
+  }
+
+  .featured-2 {
+    width: 75%;
+  }
+  .featured-3-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 75%;
+  }
+
+  .featured-4 {
+    justify-content: center;
+    padding-left: 20px;
+  }
 }

@@ -19,13 +19,15 @@ export const Featured = () => {
         <button className="featured-2-btn">SEE PRODUCT</button>
       </div>
 
-      <div className="featured-3">
-        <img className="featured-3-img" src={featured3} alt="yx1-earphones" />
-      </div>
+      <div className="featured-3-4">
+        <div className="featured-3">
+          <img className="featured-3-img" src={featured3} alt="yx1-earphones" />
+        </div>
 
-      <div className="featured-4">
-        <h3 className="featured-header">YX1 EARPHONES</h3>
-        <button className="featured-4-btn">SEE PRODUCT</button>
+        <div className="featured-4">
+          <h3 className="featured-header">YX1 EARPHONES</h3>
+          <button className="featured-4-btn">SEE PRODUCT</button>
+        </div>
       </div>
     </div>
   );
