@@ -16,7 +16,7 @@
 
 .xx99-mrk2-btn {
   padding: 10px 20px 10px 20px;
-  background-color: orange;
+  background-color: #d87d4a;
   color: white;
   border: none;
 }
@@ -44,11 +44,12 @@
     padding: 20px 0 60px 0;
     letter-spacing: 1px;
     color: white;
+    margin-bottom: 50px;
   }
 
   .xx99-mrk2-btn {
     padding: 10px 20px 10px 20px;
-    background-color: orange;
+    background-color: #d87d4a;
     color: white;
     border: none;
   }

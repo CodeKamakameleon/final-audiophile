@@ -1,5 +1,5 @@
 import headphonesImg from "../images/category-headphones/mobile/image-xx99-mark-one.jpg";
-import speakerImg from "../images/category-speakers/mobile/image-zx9.jpg";
+import speakerImg from "../images/home/mobile/image-speaker-zx9.png";
 import earphonesImg from "../images/category-earphones/mobile/image-yx1-earphones.jpg";
 
 export const Shopbar = () => {

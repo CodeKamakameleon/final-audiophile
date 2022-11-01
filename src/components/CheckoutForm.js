@@ -1,10 +1,10 @@
 export const CheckoutForm = () => {
   return (
-    <form>
+    <form className="checkout">
       <header>CHECKOUT</header>
 
       <div className="checkout-billing">
-        <h2>BILLING DETAILS</h2>
+        <h2 className="checkout-header">BILLING DETAILS</h2>
         <label>Name</label>
         <input type="text" placeholder="Name"></input>
 
@@ -16,7 +16,7 @@ export const CheckoutForm = () => {
       </div>
 
       <div className="checkout-shipping">
-        <h2>SHIPPING INFO</h2>
+        <h2 className="checkout-header">SHIPPING INFO</h2>
         <label>Address</label>
         <input type="text" placeholder="Shipping Address"></input>
 
@@ -30,7 +30,7 @@ export const CheckoutForm = () => {
       </div>
 
       <div className="checkout-payment">
-        <h2>PAYMENT DETAILS</h2>
+        <h2 className="checkout-header">PAYMENT DETAILS</h2>
         <label>Payment Method</label>
         <input type="checkbox">e-Money</input>
         <input type="checkbox">Cash on Delivery</input>

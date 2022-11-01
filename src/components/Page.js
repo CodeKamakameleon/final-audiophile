@@ -9,7 +9,7 @@ import { Closer } from "./Closer";
 import { Footer } from "./Footer";
 
 export const Page = () => {
-  const { data: data } = useGetDataQuery();
+  // const { data: data } = useGetDataQuery();
   return (
     <div>
       <Navbar />

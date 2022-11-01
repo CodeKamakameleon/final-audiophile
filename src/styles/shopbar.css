@@ -2,16 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin: auto;
+  /* align-items: center; */
   letter-spacing: 1px;
+  width: 80%;
 }
 
 .card {
   display: block;
   background-color: #f1f1f1;
   padding: 10px 20px 10px 20px;
-  border-radius: 8px;
-  margin-top: 20px;
+  border-radius: 5px;
+  margin-top: 40px;
   font-weight: bold;
   width: 75%;
   text-align: center;
@@ -23,14 +25,37 @@
 }
 
 .card-btn > span {
-  color: orange;
+  color: #d87d4a;
   font-size: larger;
 }
 
 .card > img {
-  max-width: 80px;
+  max-width: 60px;
+  margin: -50px auto -10%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 8px;
+  /* object-position: 20%; */
 }
 
 .nav-card > img {
   max-width: 80px;
+}
+
+@media screen and (max-width: 680px) {
+  .shopbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .shopbar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    margin: 15px;
+  }
 }

@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { ImFacebook2 } from "react-icons/im";
+import { ImTwitter } from "react-icons/im";
+import { ImInstagram } from "react-icons/im";
 
 export const Footer = () => {
   return (
@@ -25,6 +28,12 @@ export const Footer = () => {
         facility - we're open 7 days a week.
       </p>
       <p className="footer-copyright"> Copyright 2021. All Rights Reserved</p>
+
+      <div className="footer-icons">
+        <ImFacebook2 className="footer-icon" />
+        <ImTwitter className="footer-icon" />
+        <ImInstagram className="footer-icon" />
+      </div>
     </footer>
   );
 };
