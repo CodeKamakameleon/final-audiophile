@@ -12,7 +12,7 @@ export const Banner = () => {
         Experience natural, lifelike audio and exceptional build quality made
         for the passionate music enthusiast.{" "}
       </p>
-      <button className="xx99-mrk2-btn">SEE PRODUCT</button>
+      <button className="orange-btn">SEE PRODUCT</button>
     </div>
   );
 };

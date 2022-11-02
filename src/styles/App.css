@@ -4,6 +4,7 @@
 @import url("featured.css");
 @import url("Closer.css");
 @import url("footer.css");
+@import url("category.css");
 
 * {
   font-family: "Manrope", sans-serif;
