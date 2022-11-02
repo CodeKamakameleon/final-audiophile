@@ -33,6 +33,7 @@
   .nav-desktop > a {
     padding: 20px;
     color: white;
+    text-decoration: none;
   }
 
   .cart-icon {

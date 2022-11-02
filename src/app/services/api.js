@@ -6,7 +6,7 @@ export const api = createApi({
   endpoints: (builder) => ({
     getData: builder.query({
       query: () => "data.json",
-      // transformResponse: (response) => response.data,
+      transformResponse: (response) => response.products,
     }),
   }),
 });

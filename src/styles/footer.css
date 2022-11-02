@@ -22,6 +22,7 @@
   color: white;
   flex-direction: column;
   padding-bottom: 30px;
+  text-decoration: none;
 }
 
 .footer-body {
