@@ -1,6 +1,7 @@
 import headphonesImg from "../images/category-headphones/mobile/image-xx99-mark-one.jpg";
 import speakerImg from "../images/home/mobile/image-speaker-zx9.png";
 import earphonesImg from "../images/category-earphones/mobile/image-yx1-earphones.jpg";
+import { Link } from "react-router-dom";
 // import { useGetDataQuery } from "../app/services/api";
 // import { useParams } from "react-router-dom";
 // import { useEffect, useState } from "react";
@@ -24,23 +25,23 @@ export const Shopbar = () => {
       <div className="card">
         <img src={headphonesImg} alt="xx-99-mark-1" />
         <p className="card-header">HEADPHONES</p>
-        <button className="card-btn">
+        <Link to="/headphones" className="card-btn">
           SHOP <span>&gt;</span>{" "}
-        </button>
+        </Link>
       </div>
       <div className="card">
         <img src={speakerImg} alt="speaker-img" />
         <p className="card-header">SPEAKERS</p>
-        <button className="card-btn">
+        <Link to="/speakers" className="card-btn">
           SHOP <span>&gt;</span>
-        </button>
+        </Link>
       </div>
       <div className="card">
         <img src={earphonesImg} alt="earphones-img" />
         <p className="card-header">EARPHONES</p>
-        <button className="card-btn">
+        <Link to="/earphones" className="card-btn">
           SHOP <span>&gt;</span>{" "}
-        </button>
+        </Link>
       </div>
     </div>
   );

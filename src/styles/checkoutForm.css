@@ -1,7 +1,24 @@
 .checkout {
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  border-radius: 8px;
 }
 
 .checkout-header {
-  color: orange;
+  color: #d87d4a;
+  text-transform: uppercase;
+}
+
+.checkout-billing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout-label {
+  font-weight: bold;
+}
+
+.checkout-input {
+  border: 0.5px solid gray;
 }

@@ -6,6 +6,7 @@
   /* align-items: center; */
   letter-spacing: 1px;
   width: 80%;
+  padding: 30px 0 30px 0;
 }
 
 .card {
@@ -22,6 +23,7 @@
 .card-btn {
   border: none;
   color: gray;
+  text-decoration: none;
 }
 
 .card-btn > span {

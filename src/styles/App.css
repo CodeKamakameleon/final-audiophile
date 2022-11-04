@@ -2,10 +2,13 @@
 @import url("banner.css");
 @import url("shopbar.css");
 @import url("featured.css");
-@import url("Closer.css");
+@import url("closer.css");
 @import url("footer.css");
 @import url("category.css");
+@import url("products.css");
 
 * {
   font-family: "Manrope", sans-serif;
+  margin: 0;
+  letter-spacing: 1px;
 }

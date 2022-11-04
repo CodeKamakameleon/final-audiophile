@@ -1,10 +1,10 @@
 import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import emptyCart from "../images/cart/empty-cart.png";
 import headphonesImg from "../images/category-headphones/mobile/image-xx99-mark-one.jpg";
 import speakerImg from "../images/category-speakers/mobile/image-zx9.jpg";
 import earphonesImg from "../images/category-earphones/mobile/image-yx1-earphones.jpg";
+import { Cart } from "../features/cart/Cart";
 
 export const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -18,23 +18,23 @@ export const Navbar = () => {
             <div className="nav-card">
               <img src={headphonesImg} alt="img-xx99-mark-1" />
               <p className="card-header">HEADPHONES</p>
-              <button className="card-btn">
+              <Link to="/headphones" className="card-btn">
                 SHOP <span>&gt;</span>{" "}
-              </button>
+              </Link>
             </div>
             <div className="nav-card">
               <img src={speakerImg} alt="speaker-img" />
               <p className="card-header">SPEAKERS</p>
-              <button className="card-btn">
+              <Link to="/speakers" className="card-btn">
                 SHOP <span>&gt;</span>
-              </button>
+              </Link>
             </div>
             <div className="nav-card">
               <img src={earphonesImg} alt="earphones-img" />
               <p className="card-header">EARPHONES</p>
-              <button className="card-btn">
+              <Link to="/earphones" className="card-btn">
                 SHOP <span>&gt;</span>{" "}
-              </button>
+              </Link>
             </div>
           </div>
         )}
@@ -43,12 +43,12 @@ export const Navbar = () => {
       <div className="nav2">
         <h2 className="header">audiophile</h2>
         <div className="nav-desktop">
-          <Link to="/home">Home</Link>
-          <Link to="/headphones">Headphones</Link>
-          <Link to="/speakers">Speakers</Link>
-          <Link to="/earphones">Earphones</Link>
+          <Link to="/home">HOME</Link>
+          <Link to="/headphones">HEADPHONES</Link>
+          <Link to="/speakers">SPEAKERS</Link>
+          <Link to="/earphones">EARPHONES</Link>
         </div>
-        <img className="cart-icon" alt="cart-icon" src={emptyCart} />
+        <Cart />
       </div>
     </nav>
   );

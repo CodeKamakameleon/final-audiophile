@@ -6,11 +6,13 @@ import { Shopbar } from "./Shopbar";
 // import { Closer } from "./Closer";
 import { Footer } from "./Footer";
 import closerImg from "../images/shared/mobile/image-best-gear.jpg";
+import { useImageSize } from "../app/hooks";
 
 export const Category = () => {
   const [products, setProducts] = useState();
   const { data } = useGetDataQuery();
   const { category } = useParams();
+  const imageSize = useImageSize();
 
   useEffect(() => {
     setProducts(data?.filter((item) => item.category === category));
@@ -19,25 +21,21 @@ export const Category = () => {
   return products?.length ? (
     <Fragment>
       <Navbar />
-
+      <div className="category-title">{category}</div>
       {products.map((product) => (
         <div key={product.id}>
-          <div className="category-title">{product.category}</div>
           <div className="category">
-            <img
-              className="category-img"
-              src={product.image}
-              alt={product?.name}
-            />
+            <div className="category-img-wrapper">
+              <img
+                className="category-img"
+                src={product.image[imageSize]}
+                alt={product?.name}
+              />
+            </div>
             <div className="category-info">
               <h3 className="category-header">{product.name}</h3>
               <div className="category-description">{product.description}</div>
-              <Link
-                style={{ textDecoration: "none", display: "block" }}
-                to={product.slug}
-                key={product.id}
-                className="orange-btn"
-              >
+              <Link to={product.slug} key={product.id} className="orange-btn">
                 SEE PRODUCT
               </Link>
             </div>

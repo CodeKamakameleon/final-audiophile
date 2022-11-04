@@ -8,7 +8,7 @@ import { Featured } from "./Featured";
 import { Closer } from "./Closer";
 import { Footer } from "./Footer";
 
-export const Page = () => {
+export const Page = ({ products, data }) => {
   return (
     <div>
       <Navbar />

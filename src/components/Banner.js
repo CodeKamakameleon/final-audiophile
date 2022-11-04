@@ -1,6 +1,6 @@
-export const Banner = () => {
-  const button = () => {};
+import { Link } from "react-router-dom";
 
+export const Banner = ({ data, product }) => {
   return (
     <div className="banner">
       <div className="banner-header1">NEW PRODUCT</div>
@@ -12,7 +12,9 @@ export const Banner = () => {
         Experience natural, lifelike audio and exceptional build quality made
         for the passionate music enthusiast.{" "}
       </p>
-      <button className="orange-btn">SEE PRODUCT</button>
+      {/* <Link to={product.slug} key={product.id} className="orange-btn">
+        SEE PRODUCT
+      </Link> */}
     </div>
   );
 };
