@@ -10,6 +10,7 @@ import { Closer } from "./Closer";
 import { Footer } from "./Footer";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../features/cart/cartSlice";
+import { useCounter } from "./useCounter";
 
 export const Products = () => {
   const [product, setProduct] = useState();
@@ -19,8 +20,11 @@ export const Products = () => {
   const imageSize = useImageSize();
   let navigate = useNavigate();
 
+  const { up, down, display, reset, displayName, updateDisplayName } =
+    useCounter(0);
+
   const handleAddToCart = () => {
-    dispatch(addToCart(product));
+    dispatch(addToCart({ ...product, quantity: display }));
   };
 
   useEffect(() => {
@@ -47,10 +51,21 @@ export const Products = () => {
             <div className="product-title">{product.name}</div>
             <div className="product-description">{product.description}</div>
             <div className="product-price">${product.price}</div>
+            <div className="product-btns">
+              <div className="product-counter">
+                <button className="count-btn" onClick={down}>
+                  -
+                </button>
+                {display}
+                <button className="count-btn" onClick={up}>
+                  +
+                </button>
+              </div>
 
-            <button onClick={handleAddToCart} className="orange-btn">
-              ADD TO CART
-            </button>
+              <button onClick={handleAddToCart} className="orange-btn">
+                ADD TO CART
+              </button>
+            </div>
           </div>
         </div>
         <div className="product-row">
@@ -103,6 +118,7 @@ export const Products = () => {
                   alt={item.name}
                 />
                 <h2 className="product-name">{item.name}</h2>
+
                 <div className="product-btn">
                   <Link
                     to={`/${item.category}/${item.slug}`}

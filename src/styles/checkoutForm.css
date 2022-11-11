@@ -1,24 +1,48 @@
 .checkout {
-  display: flex;
+  display: grid;
   flex-direction: column;
   background-color: white;
+  /* align-items: center; */
+  justify-content: center;
   border-radius: 8px;
+  width: 50%;
+  padding-left: 30px;
+}
+
+.checkout-title {
+  font-size: x-large;
+  font-weight: 600;
+  padding: 30px;
+  /* text-align: start; */
 }
 
 .checkout-header {
+  font-size: large;
   color: #d87d4a;
   text-transform: uppercase;
+  width: 100%;
+  padding: 20px;
 }
 
 .checkout-billing {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 30px;
+  /* width: ; */
 }
 
 .checkout-label {
   font-weight: bold;
+  padding-right: 10px;
+  width: 40%;
+  padding-bottom: 10px;
 }
 
 .checkout-input {
-  border: 0.5px solid gray;
+  border: 0.5px solid #d3d3d3;
+  width: 250px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }

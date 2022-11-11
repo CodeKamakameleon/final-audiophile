@@ -12,9 +12,12 @@ export const Banner = ({ data, product }) => {
         Experience natural, lifelike audio and exceptional build quality made
         for the passionate music enthusiast.{" "}
       </p>
-      {/* <Link to={product.slug} key={product.id} className="orange-btn">
+      <Link
+        to={"/headphones/xx99-mark-two-headphones"}
+        className="xx99-mrk2-btn"
+      >
         SEE PRODUCT
-      </Link> */}
+      </Link>
     </div>
   );
 };

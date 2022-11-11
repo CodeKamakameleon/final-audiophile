@@ -6,6 +6,7 @@
 @import url("footer.css");
 @import url("category.css");
 @import url("products.css");
+@import url("checkoutForm.css");
 
 * {
   font-family: "Manrope", sans-serif;

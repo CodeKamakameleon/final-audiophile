@@ -1,12 +1,84 @@
-@media screen and (max-width: 1280px) {
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  border-bottom: 1px gray;
+  font-weight: 700;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.mbl-nav {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav-card {
+  display: block;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  width: 120px;
+  text-align: center;
+  margin: 0 2px 0 2px;
+}
+
+.nav2 {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.cart-icon {
+  /* display: flex; */
+  justify-content: flex-end;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  filter: invert(100%);
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+.cart-wrapper {
+  border: none;
+  background-color: black;
+}
+
+@media screen and (min-width: 1280px) {
   .navbar {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     background-color: black;
     color: white;
+    font-size: small;
     font-weight: 600;
-    border-bottom: 0.5px solid gray;
-    /* width: 100%; */
   }
 
   .hamburger {
@@ -17,16 +89,21 @@
     /* flex-direction: row; */
     justify-content: space-between;
     text-align: center;
-    width: 100%;
+    height: 4rem;
+    border-bottom: 0.1px solid gray;
+    width: 80%;
+    margin: 0;
   }
 
   .header {
     /* padding-right: 10px; */
     padding-left: 20px;
+    padding-top: 15px;
   }
 
   .nav-desktop {
     display: flex;
+    align-items: center;
     justify-content: center;
   }
 
@@ -72,71 +149,5 @@
     max-height: 20px;
     top: 20px;
     right: 20px;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    border-bottom: 1px gray;
-    font-weight: 700;
-  }
-
-  .nav-desktop {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-right: 20px;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  .mbl-nav {
-    display: flex;
-    flex-direction: row;
-    color: black;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .nav-card {
-    display: block;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    margin-top: 20px;
-    font-weight: bold;
-    width: 120px;
-    text-align: center;
-    margin: 0 2px 0 2px;
-  }
-
-  .nav2 {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-  }
-
-  .header {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  .cart-icon {
-    /* display: flex; */
-    justify-content: flex-end;
-    max-width: 40px;
-    max-height: 40px;
-    filter: invert(100%);
-    padding-top: 15px;
-    padding-right: 20px;
   }
 }

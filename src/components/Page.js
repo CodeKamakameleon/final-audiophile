@@ -7,11 +7,13 @@ import { Shopbar } from "./Shopbar";
 import { Featured } from "./Featured";
 import { Closer } from "./Closer";
 import { Footer } from "./Footer";
+import { Modal } from "./Modal";
 
-export const Page = ({ products, data }) => {
+export const Page = () => {
   return (
     <div>
       <Navbar />
+      <Modal />
       <Banner />
       <Shopbar />
       <Featured />

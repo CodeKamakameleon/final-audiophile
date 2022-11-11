@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function useCounter(initialState = 0, initialName = "display") {
-  const [display, setDisplay] = useState(initialState);
+  const [display, setDisplay] = useState(initialState || 1);
   const [displayName, setDisplayName] = useState(initialState);
 
   const up = () => {

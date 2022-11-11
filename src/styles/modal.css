@@ -1,0 +1,17 @@
+.checkout-btn {
+  padding: 10px 20px 10px 20px;
+  background-color: #d87d4a;
+  color: white;
+  border: none;
+  width: 90%;
+  text-decoration: none;
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.modal {
+  display: none;
+}
+.modalIsOpen {
+  display: block;
+}
