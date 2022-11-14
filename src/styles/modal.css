@@ -1,3 +1,9 @@
+.page-modal-open {
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  opacity: 0.8;
+  transition: all 200ms;
+}
+
 .checkout-btn {
   padding: 10px 20px 10px 20px;
   background-color: #d87d4a;
@@ -12,6 +18,14 @@
 .modal {
   display: none;
 }
+
 .modalIsOpen {
   display: block;
+  position: fixed;
+  left: 950px;
+  width: 15rem;
+  background-color: white;
+  padding: 20px 0 20px 20px;
+  margin: 20px 60px 0 0;
+  border-radius: 8px;
 }
