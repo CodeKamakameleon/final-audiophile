@@ -7,7 +7,7 @@ import { Shopbar } from "./Shopbar";
 import { Featured } from "./Featured";
 import { Closer } from "./Closer";
 import { Footer } from "./Footer";
-import { Modal } from "./Modal";
+import { Modal } from "../features/modal/Modal";
 import clsx from "clsx";
 import { useSelector } from "react-redux";
 

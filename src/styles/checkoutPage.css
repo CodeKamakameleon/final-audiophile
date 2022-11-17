@@ -6,3 +6,13 @@
   display: flex;
   flex-direction: column;
 }
+
+.checkout-columns {
+  display: flex;
+  flex-direction: column-reverse;
+  column-count: 2;
+}
+
+.checkout-page-summary {
+  /* column-rule: 4px double #ff00ff; */
+}

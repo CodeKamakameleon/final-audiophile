@@ -4,13 +4,14 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { useGetDataQuery } from "../app/services/api";
 import { useImageSize } from "../app/hooks";
 import { Navbar } from "./Navbar";
-
+import clsx from "clsx";
 import { Shopbar } from "./Shopbar";
 import { Closer } from "./Closer";
 import { Footer } from "./Footer";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../features/cart/cartSlice";
 import { useCounter } from "./useCounter";
+import { Modal } from "../features/modal/Modal";
 
 export const Products = () => {
   const [product, setProduct] = useState();
@@ -20,8 +21,7 @@ export const Products = () => {
   const imageSize = useImageSize();
   let navigate = useNavigate();
 
-  const { up, down, display, reset, displayName, updateDisplayName } =
-    useCounter(0);
+  const { up, down, display } = useCounter(0);
 
   const handleAddToCart = () => {
     dispatch(addToCart({ ...product, quantity: display }));
@@ -31,10 +31,16 @@ export const Products = () => {
     setProduct(data?.find((item) => item.slug === slug));
   }, [data, slug]);
 
+  const isOpen = useSelector((state) => state.modal.isOpen);
+
   return product ? (
     <>
-      <div key={product.id} className="product">
+      <div
+        key={product.id}
+        className={clsx(`product ${isOpen ? "page-modal-open" : ""}`)}
+      >
         <Navbar />
+        <Modal />
         <button className="back-btn" onClick={() => navigate(-1)}>
           Go Back
         </button>
@@ -120,10 +126,7 @@ export const Products = () => {
                 <h2 className="product-name">{item.name}</h2>
 
                 <div className="product-btn">
-                  <Link
-                    to={`/${item.category}/${item.slug}`}
-                    className="orange-btn"
-                  >
+                  <Link to={`/${item.slug}`} className="orange-btn">
                     SEE PRODUCT
                   </Link>
                 </div>

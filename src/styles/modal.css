@@ -4,6 +4,10 @@
   transition: all 200ms;
 }
 
+.total {
+  margin-bottom: 30px;
+}
+
 .checkout-btn {
   padding: 10px 20px 10px 20px;
   background-color: #d87d4a;
@@ -28,4 +32,25 @@
   padding: 20px 0 20px 20px;
   margin: 20px 60px 0 0;
   border-radius: 8px;
+}
+
+.modal-top {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.modal-header {
+  font-weight: bold;
+  padding-right: 4rem;
+}
+
+.remove-btn {
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.modal-items {
+  padding-bottom: 10px;
 }

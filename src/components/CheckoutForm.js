@@ -10,10 +10,10 @@ export const CheckoutForm = () => {
         <label className="checkout-label">Email Address</label>
 
         <input className="checkout-input" type="text" placeholder="Name" />
-
         <input className="checkout-input" type="email" placeholder="E-mail" />
 
-        <label className="checkout-label">Phone Number</label>
+        <label className="checkout-label2">Phone Number</label>
+
         <input
           className="checkout-input"
           type="tel"
@@ -23,31 +23,51 @@ export const CheckoutForm = () => {
 
       <div className="checkout-shipping">
         <h2 className="checkout-header">SHIPPING INFO</h2>
-        <label className="checkout-label">Address</label>
+
+        <label className="shipping-label2">Address</label>
         <input
-          className="checkout-input"
+          className="shipping-input"
           type="text"
           placeholder="Shipping Address"
         />
 
         <label className="checkout-label">Zip Code</label>
-        <input className="checkout-input" type="text" placeholder="Zip Code" />
-
         <label className="checkout-label">City</label>
+
+        <input className="checkout-input" type="text" placeholder="Zip Code" />
         <input className="checkout-input" type="text" placeholder="City" />
-        <label className="checkout-label">Country</label>
+
+        <label className="shipping-label2">Country</label>
         <input className="checkout-input" type="text" placeholder="Country" />
       </div>
 
       <div className="checkout-payment">
         <h2 className="checkout-header">PAYMENT DETAILS</h2>
-        <label>Payment Method</label>
-        <input type="checkbox" className="checkbox checkbox:active" e-Money />
+        <label className="payment-label">Payment Method</label>
 
-        <input className="checkbox checkbox:active" type="checkbox" />
-        <label>e-Money Number</label>
+        <div className="radio-border radio:checked">
+          <input
+            type="radio"
+            value="e-money"
+            id="e-money"
+            className="radio "
+            name="payment"
+          />
+        </div>
+
+        <div className="radio-border radio:checked">
+          <input
+            type="radio"
+            value="Cash on delivery"
+            id="Cash on delivery"
+            className="radio "
+            name="payment"
+          />
+        </div>
+
+        <label className="checkout-label">e-Money Number</label>
         <input className="checkout-input" type="number" />
-        <label>e-Money Pin</label>
+        <label className="checkout-label">e-Money Pin</label>
         <input className="checkout-input" type="number" />
       </div>
     </form>
