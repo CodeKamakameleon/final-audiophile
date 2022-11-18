@@ -10,30 +10,37 @@
 
 .featured-1 {
   display: flex;
+  flex-direction: column;
   background-image: url("../images/home/desktop/pattern-circles.svg");
   align-items: center;
   text-align: center;
   justify-content: center;
   border-radius: 8px;
   background-color: #d87d4a;
-  /* padding: 20px;
-  width: 75%; */
+  height: 27rem;
+  width: 82%;
 }
 
 .featured-header-1 {
-  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: white;
   font: bold;
   font-size: xx-large;
+  width: 10rem;
+  margin: auto;
 }
 .featured-body {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   color: white;
   align-items: center;
-  padding: 20px 0 30px 0;
-  width: 20rem;
+  padding: 20px 20px 30px 20px;
+  width: 18rem;
 }
 
 .featured-btn {
@@ -42,12 +49,17 @@
   padding: 10px 20px 10px 20px;
   border: none;
   text-decoration: none;
+  /* margin-bottom: 40px; */
+}
+
+.featured-btn-container {
+  margin-bottom: 40px;
 }
 
 .featured-1-img {
   width: 30%;
   height: 30%;
-  padding: 40px;
+  margin: 20px 0 20px 0;
 }
 
 .featured-2 {
@@ -78,6 +90,8 @@
 .featured-3-4 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .featured-3 {
@@ -120,12 +134,46 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+  .featured-1 {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+  }
+
+  .featured-1-img {
+    width: 30px;
+  }
+
+  .featured-3-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 75%;
+  }
+  .featured-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .featured-4 {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .featured-1 {
     display: flex;
-
+    flex-direction: row;
     width: 75%;
   }
+  /* .featured-1-img {
+    width: 30px;
+  } */
+
   .featured-1-right {
     display: block;
   }
@@ -136,6 +184,7 @@
   .featured-3-4 {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 30px;
     width: 75%;
   }

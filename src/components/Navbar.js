@@ -41,7 +41,9 @@ export const Navbar = () => {
       </div>
 
       <div className="nav2">
-        <h2 className="header">audiophile</h2>
+        <div className="header-container">
+          <h2 className="header">audiophile</h2>
+        </div>
         <div className="nav-desktop">
           <Link to="/home">HOME</Link>
           <Link to="/headphones">HEADPHONES</Link>

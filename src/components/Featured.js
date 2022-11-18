@@ -13,9 +13,11 @@ export const Featured = () => {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <Link to={"/speakers/zx9-speaker"} className="featured-btn">
-            SEE PRODUCT
-          </Link>
+          <div className="featured-btn-container">
+            <Link to={"/speakers/zx9-speaker"} className="featured-btn">
+              SEE PRODUCT
+            </Link>
+          </div>
         </div>
       </div>
 

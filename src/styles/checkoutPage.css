@@ -1,10 +1,14 @@
-* {
+/* * {
+  background-color: #d3d3d3;
+} */
+
+.checkout-body {
   background-color: #d3d3d3;
 }
 
 .checkout-page {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .checkout-columns {

@@ -1,6 +1,6 @@
-import headphonesImg from "../images/category-headphones/mobile/image-xx99-mark-one.jpg";
-import speakerImg from "../images/home/mobile/image-speaker-zx9.png";
-import earphonesImg from "../images/category-earphones/mobile/image-yx1-earphones.jpg";
+import headphonesImg from "../images/shared/desktop/image-headphones.png";
+import speakerImg from "../images/shared/desktop/image-speakers.png";
+import earphonesImg from "../images/shared/desktop/image-earphones.png";
 import { Link } from "react-router-dom";
 // import { useGetDataQuery } from "../app/services/api";
 // import { useParams } from "react-router-dom";

@@ -2,15 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: black;
   letter-spacing: 1px;
+  border-top: 3px solid #d87d4a;
 }
 
 .footer-header {
   color: white;
   font-size: x-large;
   font-weight: bold;
+  margin: 20px 0 20px 0;
 }
 
 .footer-links {

@@ -11,12 +11,14 @@ export const CheckoutPage = () => {
     <div className="checkout-page">
       <Navbar />
       {/* <Modal /> */}
-      <button className="back-btn" onClick={() => navigate(-1)}>
-        Go Back
-      </button>
-      <div className="checkout-columns">
-        <CheckoutForm className="checkout-page-form" />
-        <Summary className="checkout-page-summary" />
+      <div className="checkout-body">
+        <button className="back-btn" onClick={() => navigate(-1)}>
+          Go Back
+        </button>
+        <div className="checkout-columns">
+          <CheckoutForm className="checkout-page-form" />
+          <Summary className="checkout-page-summary" />
+        </div>
       </div>
       <Footer />
     </div>
