@@ -35,7 +35,7 @@ export const Featured = () => {
 
         <div className="featured-4">
           <h3 className="featured-header">YX1 EARPHONES</h3>
-          <Link to={"/earphones/yx1-earphones"} className="orange-btn">
+          <Link to={"/earphones/yx1-earphones"} className="featured-4-btn">
             SEE PRODUCT
           </Link>
         </div>

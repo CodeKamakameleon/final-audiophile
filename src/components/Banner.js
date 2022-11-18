@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Banner = ({ data, product }) => {
+export const Banner = () => {
   return (
     <div className="banner">
       <div className="banner-header1">NEW PRODUCT</div>

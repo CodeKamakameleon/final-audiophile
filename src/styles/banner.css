@@ -56,15 +56,16 @@
   .banner {
     background-image: url(../images/home/tablet/image-hero.jpg);
     align-items: center;
+    height: 60rem;
   }
 
   .closer {
     margin-top: 20px;
   }
 
-  /* .xx99-mrk2-btn {
-    margin-right: 80px;
-  } */
+  .xx99-mrk2-btn {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width: 1280px) {

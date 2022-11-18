@@ -1,21 +1,11 @@
-import { useSelector } from "react-redux";
-import { useCounter } from "../../components/useCounter";
-
-export const Counter = () => {
-  const cart = useSelector((state) => state.cart);
-
-  const quantity = cart.products.map((product) => product.quantity);
-  const initialState = quantity.find((q) => q.quantity);
-
-  const { up, down, display } = useCounter(initialState);
-  console.log(initialState);
+export const Counter = ({ count, onChange }) => {
   return (
     <div className="product-counter">
-      <button className="count-btn" onClick={down}>
+      <button className="count-btn" onClick={() => onChange(count - 1)}>
         -
       </button>
-      {display}
-      <button className="count-btn" onClick={up}>
+      {count}
+      <button className="count-btn" onClick={() => onChange(count + 1)}>
         +
       </button>
     </div>
