@@ -2,6 +2,7 @@
   /* background-color: rgba(0, 0, 0, 0.4); */
   opacity: 0.8;
   transition: all 200ms;
+  /* width: fit-content; */
 }
 
 .total {
@@ -40,6 +41,12 @@
   padding-bottom: 20px;
 }
 
+.modal-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 6px;
+}
+
 .modal-header {
   font-weight: bold;
   padding-right: 4rem;
@@ -52,5 +59,22 @@
 }
 
 .modal-items {
+  display: flex;
   padding-bottom: 10px;
+}
+
+.modal-name {
+  font-weight: bold;
+  font-size: small;
+}
+
+.modal-block {
+  display: block;
+  padding: 0 0px 0 10px;
+  font-size: small;
+  width: 5rem;
+}
+
+.modal-counter {
+  padding: 0 10px 0 5px;
 }

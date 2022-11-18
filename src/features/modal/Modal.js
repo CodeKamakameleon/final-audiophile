@@ -53,15 +53,23 @@ export const Modal = () => {
       {/*  ITEMS */}
       {cart.products.map((product) => (
         <div className="modal-items" key={product.id}>
-          <img src={product.cartImage} alt={product.name} />
-          <div className="">{product.name}</div>
-          <div>${product.price}</div>
-          <Counter
-            onChange={(num) => {
-              handleCount({ id: product.id, quantity: num });
-            }}
-            count={product.quantity}
+          <img
+            className="modal-img"
+            src={product.cartImage}
+            alt={product.name}
           />
+          <div className="modal-block">
+            <div className="modal-name">{product.shortName}</div>
+            <div>${product.price}</div>
+          </div>
+          <div className="modal-counter">
+            <Counter
+              onChange={(num) => {
+                handleCount({ id: product.id, quantity: num });
+              }}
+              count={product.quantity}
+            />
+          </div>
         </div>
       ))}
 

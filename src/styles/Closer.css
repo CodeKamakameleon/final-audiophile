@@ -17,8 +17,9 @@
 
 .closer-header {
   font-size: xx-large;
-  /* width: 75%; */
-  margin: 20px 0 20px 0;
+  width: 50%;
+  margin: auto;
+  padding: 20px 0 20px 0;
 }
 
 .closer-header > span {
@@ -26,7 +27,7 @@
 }
 
 .closer-body {
-  width: 90%;
+  width: 60%;
   padding-bottom: 40px;
   color: gray;
   margin: auto;
@@ -35,6 +36,10 @@
 @media screen and (min-width: 1024px) {
   .closer {
     margin-top: 20px;
+  }
+
+  .closer-header {
+    width: 40%;
   }
 
   /* .closer-img {

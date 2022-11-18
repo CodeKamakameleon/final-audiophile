@@ -6,6 +6,7 @@ import { ImInstagram } from "react-icons/im";
 export const Footer = () => {
   return (
     <footer className="footer">
+      <div className="footer-line" />
       <h2 className="footer-header footer-left">audiophile</h2>
       <div className="footer-links footer-right">
         <Link className="footer-link" to="/home">

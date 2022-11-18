@@ -1,6 +1,6 @@
 export const Counter = ({ count, onChange }) => {
   return (
-    <div className="product-counter">
+    <div className="product-counter ">
       <button className="count-btn" onClick={() => onChange(count - 1)}>
         -
       </button>
