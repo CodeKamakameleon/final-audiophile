@@ -11,27 +11,35 @@ export const Summary = () => {
 
         {/* items */}
         {cart.products.map((product) => (
-          <div className="modal-items" key={product.id}>
-            <img src={product.img} alt={product.name} />
-            <div className="">{product.name}</div>
-            <div>${product.price}</div>
-            <div>X{product.quantity}</div>
+          <div className="summary-items" key={product.id}>
+            <div className="modal-left">
+              <img
+                className="modal-img"
+                src={product.cartImage}
+                alt={product.shortName}
+              />
+              <div className="modal-block">
+                <div className="modal-name">{product.shortName}</div>
+                <div>${product.price}</div>
+              </div>
+            </div>
+            <div className="summary-quantity">x{product.quantity}</div>
           </div>
         ))}
-
-        <div className="summary-costs">
-          TOTAL <span> $</span>
+        <div className="summary-bottom">
+          <div className="summary-costs">
+            TOTAL <span> $</span>
+          </div>
+          <div className="summary-costs">
+            SHIPPING <span> $50</span>
+          </div>
+          <div className="summary-costs">
+            VAT(INCLUDED) <span> $</span>
+          </div>
+          <div className="summary-costs">
+            GRAND TOTAL <span> $</span>
+          </div>
         </div>
-        <div className="summary-costs">
-          SHIPPING <span> $50</span>
-        </div>
-        <div className="summary-costs">
-          VAT(INCLUDED) <span> $</span>
-        </div>
-        <div className="summary-costs">
-          GRAND TOTAL <span> $</span>
-        </div>
-
         <button className="orange-btn">CONTINUE &#38; PAY</button>
       </div>
     </>

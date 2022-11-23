@@ -17,7 +17,7 @@
   justify-content: center;
   border-radius: 8px;
   background-color: #d87d4a;
-  height: 27rem;
+  height: 40rem;
   width: 82%;
 }
 
@@ -37,10 +37,11 @@
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   align-items: center;
   padding: 20px 20px 30px 20px;
   width: 18rem;
+  line-height: 25px;
 }
 
 .featured-btn {

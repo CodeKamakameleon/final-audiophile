@@ -28,17 +28,24 @@
   display: block;
   position: fixed;
   left: 950px;
-  width: 15rem;
+  width: fit-content;
   background-color: white;
   padding: 20px 0 20px 20px;
   margin: 20px 60px 0 0;
   border-radius: 8px;
+  z-index: 1;
 }
 
 .modal-top {
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
+}
+
+.modal-left {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
 }
 
 .modal-img {

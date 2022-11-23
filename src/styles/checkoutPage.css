@@ -8,6 +8,7 @@
 
 .checkout-page {
   display: flex;
+  background-color: #d3d3d3;
   /* flex-direction: column; */
 }
 

@@ -69,11 +69,15 @@ export const CheckoutForm = () => {
               name="payment"
             />
           </div>
+          <div className="e-money">
+            <label className="checkout-label">e-Money Number</label>
+            <input className="checkout-input" type="number" />
+          </div>
 
-          <label className="checkout-label">e-Money Number</label>
-          <input className="checkout-input" type="number" />
-          <label className="checkout-label">e-Money Pin</label>
-          <input className="checkout-input" type="number" />
+          <div>
+            <label className="checkout-label">e-Money Pin</label>
+            <input className="checkout-input" type="number" />
+          </div>
         </div>
       </form>
     </div>

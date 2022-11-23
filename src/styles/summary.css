@@ -3,8 +3,34 @@
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
+  margin: 30px;
+}
+
+.summary-header {
+  padding-bottom: 20px;
+}
+
+.summary-bottom {
+  padding: 20px 0 20px 0;
 }
 
 .summary-costs {
   display: flex;
+  padding: 5px 0 5px 0;
+}
+
+.summary-items {
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-quantity {
+  font-size: small;
+  font-weight: bold;
+  color: gray;
 }
