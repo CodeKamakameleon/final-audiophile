@@ -3,7 +3,11 @@
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  margin: 30px;
+  margin-top: 50px;
+
+  width: 30%;
+  height: fit-content;
+  padding: 30px;
 }
 
 .summary-header {

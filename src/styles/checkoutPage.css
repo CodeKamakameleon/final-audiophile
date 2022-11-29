@@ -1,23 +1,24 @@
-/* * {
-  background-color: #d3d3d3;
-} */
-
 .checkout-body {
-  background-color: #d3d3d3;
+  /* background-color: #d3d3d3; */
+  /* width: 50%; */
 }
 
 .checkout-page {
-  display: flex;
-  background-color: #d3d3d3;
-  /* flex-direction: column; */
+  background-color: #f0eeee;
 }
 
 .checkout-columns {
-  display: flex;
-  flex-direction: column-reverse;
-  column-count: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.checkout-page-form {
+  /* width: 50%; */
+  margin: auto;
+  border-radius: 8px;
 }
 
 .checkout-page-summary {
-  /* column-rule: 4px double #ff00ff; */
+  /* width: 40%; */
+  /* border-radius: 8px; */
 }

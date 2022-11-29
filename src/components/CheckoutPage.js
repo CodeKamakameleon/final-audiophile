@@ -10,7 +10,7 @@ export const CheckoutPage = () => {
   return (
     <div className="checkout-page">
       <Navbar />
-      {/* <Modal /> */}
+
       <div className="checkout-body">
         <button className="back-btn" onClick={() => navigate(-1)}>
           Go Back

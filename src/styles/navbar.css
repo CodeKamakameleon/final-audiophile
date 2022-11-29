@@ -44,7 +44,11 @@
   flex-direction: row;
   color: black;
   text-align: center;
+  align-items: center;
   justify-content: center;
+  margin-left: 30rem;
+  margin-top: 11rem;
+  z-index: 1;
 }
 
 .nav-card {
@@ -53,9 +57,10 @@
   border-radius: 8px;
   margin-top: 20px;
   font-weight: bold;
-  width: 120px;
+  width: 180px;
   text-align: center;
   margin: 0 2px 0 2px;
+  padding-bottom: 10px;
 }
 
 .nav2 {

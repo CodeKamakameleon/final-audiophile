@@ -1,85 +1,45 @@
+import { InputGroup } from "./InputGroup";
+
 export const CheckoutForm = () => {
   return (
-    <div className="checkout">
-      <form>
-        <header className="checkout-title">CHECKOUT</header>
+    // <div className="checkout">
+    <form className="checkout">
+      <header className="checkout-title">CHECKOUT</header>
 
-        <div className="checkout-billing">
-          <h2 className="checkout-header">BILLING DETAILS</h2>
+      <h2 className="checkout-header">BILLING DETAILS</h2>
+      <div className="cart-section">
+        <InputGroup name="name" label="Name" />
+        <InputGroup name="email" label="Email Address" type="email" />
+        <InputGroup name="phone" label="Phone Number" />
+      </div>
 
-          <label className="checkout-label">Name</label>
-          <label className="checkout-label">Email Address</label>
+      <h2 className="checkout-header">SHIPPING INFO</h2>
 
-          <input className="checkout-input" type="text" placeholder="Name" />
-          <input className="checkout-input" type="email" placeholder="E-mail" />
+      <div className="cart-section">
+        <InputGroup name="address" label="Address" cols={1} />
+        <InputGroup name="zip" label="Zip Code" />
+        <InputGroup name="city" label="City" />
+        <InputGroup name="country" label="Country" />
+      </div>
 
-          <label className="checkout-label2">Phone Number</label>
+      <h2 className="checkout-header">PAYMENT DETAILS</h2>
 
-          <input
-            className="checkout-input"
-            type="tel"
-            placeholder="Phone Number"
-          />
+      <div className="cart-section">
+        <label className="payment-label">Payment Method</label>
+
+        <div className="cols-2 radio radio-border radio-border:checked">
+          <input type="radio" value="e-money" className="radio " />
+          <label className="input-label-r">e-Money</label>
         </div>
 
-        <div className="checkout-shipping">
-          <h2 className="checkout-header">SHIPPING INFO</h2>
-
-          <label className="shipping-label2">Address</label>
-          <input
-            className="shipping-input"
-            type="text"
-            placeholder="Shipping Address"
-          />
-
-          <label className="checkout-label">Zip Code</label>
-          <label className="checkout-label">City</label>
-
-          <input
-            className="checkout-input"
-            type="text"
-            placeholder="Zip Code"
-          />
-          <input className="checkout-input" type="text" placeholder="City" />
-
-          <label className="shipping-label2">Country</label>
-          <input className="checkout-input" type="text" placeholder="Country" />
+        <div className="cols-2 radio radio-border radio-border:checked">
+          <input type="radio" value="Cash on delivery" className="radio" />
+          <label className="input-label-r">Cash on delivery</label>
         </div>
-
-        <div className="checkout-payment">
-          <h2 className="checkout-header">PAYMENT DETAILS</h2>
-          <label className="payment-label">Payment Method</label>
-
-          <div className="radio-border radio:checked">
-            <input
-              type="radio"
-              value="e-money"
-              id="e-money"
-              className="radio "
-              name="payment"
-            />
-          </div>
-
-          <div className="radio-border radio:checked">
-            <input
-              type="radio"
-              value="Cash on delivery"
-              id="Cash on delivery"
-              className="radio "
-              name="payment"
-            />
-          </div>
-          <div className="e-money">
-            <label className="checkout-label">e-Money Number</label>
-            <input className="checkout-input" type="number" />
-          </div>
-
-          <div>
-            <label className="checkout-label">e-Money Pin</label>
-            <input className="checkout-input" type="number" />
-          </div>
-        </div>
-      </form>
-    </div>
+        <InputGroup name="emoney-number" label="e-Money Number" />
+        <InputGroup name="emoney-pin" label="e-Money Pin" />
+      </div>
+    </form>
+    // </div>
   );
 };

@@ -9,6 +9,10 @@ const getQuantity = (acc, curr) => {
   return acc + curr.quantity;
 };
 
+const getTotal = (acc, curr) => {
+  return acc + curr.price;
+};
+
 const cartSlice = createSlice({
   name: "cart",
   initialState,
@@ -47,6 +51,10 @@ const cartSlice = createSlice({
         };
       });
       state.count = state.products.reduce(getQuantity, 0);
+    },
+
+    updateTotal: (state, action) => {
+      state.products = state.products.map((p) => {});
     },
   },
 });
