@@ -12,9 +12,10 @@ import clsx from "clsx";
 import { useSelector } from "react-redux";
 
 export const Page = () => {
-  const isOpen = useSelector((state) => state.modal.isOpen);
+  const modalIsOpen = useSelector((state) => state.modal.modalIsOpen);
+
   return (
-    <div className={clsx(`page ${isOpen ? "page-modal-open" : ""}`)}>
+    <div className={clsx(`page ${modalIsOpen ? "page-modal-open" : ""}`)}>
       <Navbar />
       <Modal />
       <Banner />

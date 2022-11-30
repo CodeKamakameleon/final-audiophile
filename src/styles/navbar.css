@@ -28,29 +28,6 @@
   display: none;
 }
 
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  text-align: center;
-  margin-left: 10px;
-  width: 20px;
-}
-
-.mbl-nav {
-  display: flex;
-  flex-direction: row;
-  color: black;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-left: 30rem;
-  margin-top: 11rem;
-  z-index: 1;
-}
-
 .nav-card {
   display: block;
   background-color: #f1f1f1;
@@ -125,9 +102,6 @@
     display: none;
   }
 
-  .hamburger {
-    display: none;
-  }
   .nav2 {
     display: flex;
     /* flex-direction: row; */

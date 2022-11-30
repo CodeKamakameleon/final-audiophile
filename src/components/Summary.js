@@ -27,9 +27,11 @@ export const Summary = () => {
           </div>
         ))}
         <div className="summary-bottom">
-          <div className="summary-costs">
-            TOTAL <span> $</span>
-          </div>
+          {cart.products.map((product) => (
+            <div className="total" key={product.id}>
+              TOTAL <span> ${cart.total}</span>
+            </div>
+          ))}
           <div className="summary-costs">
             SHIPPING <span> $50</span>
           </div>

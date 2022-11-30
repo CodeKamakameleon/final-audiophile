@@ -75,7 +75,7 @@
 @media screen and (min-width: 1280px) {
   .banner {
     background-image: url(../images/home/desktop/image-hero.jpg);
-    background-size: 1280px;
+    /* background-size: 1280px; */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
