@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { Cart } from "../features/cart/Cart";
 import { Burger } from "../features/hamburger/Hamburger";
@@ -11,7 +11,9 @@ export const Navbar = () => {
         <Burger />
         <div className="nav2">
           <div className="header-container">
-            <h2 className="header">audiophile</h2>
+            <Link to="/home" className="header">
+              audiophile
+            </Link>
           </div>
           <div className="nav-desktop">
             <NavLink

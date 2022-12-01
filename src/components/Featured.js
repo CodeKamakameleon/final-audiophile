@@ -58,7 +58,7 @@ export const Featured = () => {
       <div className="featured-2">
         <div className="featured2-left">
           <h3 className="featured-header">ZX7 SPEAKER</h3>
-          <Link to={"/speakers/zx7-speaker"} className="orange-btn">
+          <Link to={"/speakers/zx7-speaker"} className="featured-4-btn">
             SEE PRODUCT
           </Link>
         </div>
