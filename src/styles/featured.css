@@ -12,6 +12,9 @@
   display: flex;
   flex-direction: column;
   background-image: url("../images/home/desktop/pattern-circles.svg");
+  background-size: 110%;
+  background-position: top -125px right -40px;
+  background-repeat: no-repeat;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -19,6 +22,13 @@
   background-color: #d87d4a;
   height: 40rem;
   width: 82%;
+}
+
+.featured-1-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
 }
 
 .featured-header-1 {
@@ -31,17 +41,19 @@
   font: bold;
   font-size: xx-large;
   width: 10rem;
-  margin: auto;
+  /* margin: 0; */
+  /* margin-left: 45px; */
 }
 .featured-body {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   color: rgba(255, 255, 255, 0.5);
-  align-items: center;
-  padding: 20px 20px 30px 20px;
-  width: 18rem;
+  text-align: center;
+  padding: 20px 0px 30px 0px;
+  width: 25rem;
   line-height: 25px;
+  margin: 0;
 }
 
 .featured-btn {
@@ -50,27 +62,43 @@
   padding: 10px 20px 10px 20px;
   border: none;
   text-decoration: none;
+
   /* margin-bottom: 40px; */
 }
 
 .featured-btn-container {
+  display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 
+.featured1-imgContainer {
+  display: flex;
+  align-items: center;
+  height: 40%;
+}
+
 .featured-1-img {
-  width: 30%;
-  height: 30%;
-  margin: 20px 0 20px 0;
+  /* width: 50%; */
+  display: flex;
+  /* align-self: center; */
+  justify-content: center;
+  /* margin-top: 40px; */
+  align-items: baseline;
+  height: 80%;
+  /* margin: 20px 0 20px 0; */
 }
 
 .featured-2 {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
   text-align: center;
-  justify-content: center;
+
+  background-color: #d3d3d3;
   background-image: url("../images/home/mobile/image-speaker-zx7.jpg");
   background-size: cover;
+  /* background-position: bottom -50px; */
   color: black;
   border-radius: 8px;
   margin-top: 20px;
@@ -88,6 +116,18 @@
   padding: 12px 25px 12px 25px;
   margin-bottom: 20px;
 }
+
+.featured2-left {
+  display: block;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.featured2-img {
+  height: 250px;
+  width: 45%;
+}
+
 .featured-3-4 {
   display: flex;
   flex-direction: column;
@@ -145,14 +185,34 @@
 @media screen and (min-width: 1024px) {
   .featured-1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
     width: 80%;
+    height: 60rem;
+    text-align: center;
+  }
+
+  .featured-header-1 {
+    text-align: center;
+    margin: auto;
+  }
+  .featured-body {
+    text-align: center;
   }
 
   .featured-1-img {
-    width: 10rem;
-    height: 14rem;
-    padding: 0 60px 0 20px;
+    width: 13rem;
+    height: 16rem;
+    /* padding: 0 60px 0 20px; */
+    /* display: flex; */
+    /* align-items: baseline; */
+    /* width: 300px;
+    height: 400px;
+    margin-bottom: -15rem; */
+  }
+
+  .featured-2 {
+    background-image: url("../images/home/tablet/image-speaker-zx7.jpg");
   }
 
   .featured-3-4 {
@@ -187,18 +247,51 @@
   .featured-1 {
     display: flex;
     flex-direction: row;
+    background-image: url("../images/home/desktop/pattern-circles.svg");
+
+    background-size: 80%;
+    background-position: left -35% bottom 100%;
     width: 75%;
+    height: 40rem;
   }
-  /* .featured-1-img {
-    width: 30px;
-  } */
+
+  .featured-header-1 {
+    text-align: start;
+    margin-left: 20px;
+  }
+
+  .featured-body {
+    text-align: start;
+  }
+  .featured-1-img {
+    display: flex;
+    align-items: baseline;
+    width: 300px;
+    height: 400px;
+    margin-bottom: -8px;
+  }
+
+  .featured1-imgContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
 
   .featured-1-right {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-btn {
+    margin-left: 20px;
   }
 
   .featured-2 {
     width: 74%;
+    background-image: url("../images/home/desktop/image-speaker-zx7.jpg");
   }
   .featured-3-4 {
     display: flex;

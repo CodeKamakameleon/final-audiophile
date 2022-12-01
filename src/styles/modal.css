@@ -9,6 +9,9 @@
   margin-bottom: 30px;
 }
 
+.total > span {
+  font-weight: bold;
+}
 .checkout-btn {
   padding: 10px 20px 10px 20px;
   background-color: #d87d4a;

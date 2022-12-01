@@ -19,10 +19,22 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-top: 11rem;
+  margin-top: 4rem;
   z-index: 1;
   background-color: white;
   opacity: 0;
+}
+
+.nav-card {
+  display: block;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+  margin: 0 2px 0 2px;
+  padding-bottom: 10px;
 }
 
 .page-burger-open {
