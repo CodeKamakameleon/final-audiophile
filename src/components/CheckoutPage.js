@@ -4,16 +4,19 @@ import { Summary } from "./Summary";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { Modal2 } from "../features/modal/Modal2";
-import { useSelector } from "react-redux";
-import clsx from "clsx";
+// import { useSelector } from "react-redux";
+// import clsx from "clsx";
 
 export const CheckoutPage = () => {
   let navigate = useNavigate();
-  const modal2IsOpen = useSelector((state) => state.modal2.modal2IsOpen);
+  // const modal2IsOpen = useSelector((state) => state.modal2.modal2IsOpen);
   return (
-    <div className={clsx(`checkout-page ${modal2IsOpen ? "modalIsOpen" : ""}`)}>
+    <div
+      className="checkout-page"
+      // {clsx(`checkout-page ${modal2IsOpen ? "modalIsOpen" : ""}`)}
+    >
       <Navbar />
-
+      <Modal2 />
       <div className="checkout-body">
         <button className="back-btn" onClick={() => navigate(-1)}>
           Go Back
@@ -24,7 +27,6 @@ export const CheckoutPage = () => {
         </div>
       </div>
       <Footer />
-      <Modal2 />
     </div>
   );
 };

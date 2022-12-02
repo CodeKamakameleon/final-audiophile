@@ -25,7 +25,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
+
   width: 100%;
 }
 
@@ -48,15 +49,15 @@
   .checkout-columns {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
     width: 100%;
   }
 
   .summary {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: flex-start; */
     margin-right: 30px;
   }
 }

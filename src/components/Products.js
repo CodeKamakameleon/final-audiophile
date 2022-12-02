@@ -37,7 +37,8 @@ export const Products = () => {
     <>
       <div
         key={product.id}
-        className={clsx(`product ${isOpen ? "page-modal-open" : ""}`)}
+        className="product"
+        // {clsx(`product ${isOpen ? "page-modal-open" : ""}`)}
       >
         <Navbar />
         <Modal />

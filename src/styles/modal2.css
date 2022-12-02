@@ -38,9 +38,11 @@
   width: fit-content;
   height: fit-content;
   background-color: white;
+  align-items: center;
   padding: 30px;
   border-radius: 8px;
   opacity: 1;
+  z-index: 1;
 }
 
 .checkmark {
