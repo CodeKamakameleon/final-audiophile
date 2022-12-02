@@ -3,7 +3,7 @@ import { CheckoutForm } from "./CheckoutForm";
 import { Summary } from "./Summary";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { Modal } from "../features/modal/Modal";
+import { Modal2 } from "../features/modal/Modal2";
 
 export const CheckoutPage = () => {
   let navigate = useNavigate();
@@ -19,6 +19,7 @@ export const CheckoutPage = () => {
           <CheckoutForm className="checkout-page-form" />
           <Summary className="checkout-page-summary" />
         </div>
+        <Modal2 />
       </div>
       <Footer />
     </div>

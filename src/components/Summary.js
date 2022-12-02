@@ -1,8 +1,22 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
+import { toggleModal } from "../features/modal/modalSlice";
 
 export const Summary = () => {
   const cart = useSelector((state) => state.cart);
   console.log(cart);
+
+  const tax = cart.total * 0.1;
+
+  const shipping = 50;
+
+  const grandTotal = cart.total + tax + shipping;
+
+  const dispatch = useDispatch();
+
+  const handleOpen = () => {
+    dispatch(toggleModal());
+  };
 
   return (
     <>
@@ -27,22 +41,24 @@ export const Summary = () => {
           </div>
         ))}
         <div className="summary-bottom">
-          {cart.products.map((product) => (
-            <div className="total" key={product.id}>
-              TOTAL <span> ${cart.total}</span>
-            </div>
-          ))}
-          <div className="summary-costs">
-            SHIPPING <span> $50</span>
+          <div className="total">
+            TOTAL <span> $ {cart?.total}</span>
           </div>
-          <div className="summary-costs">
-            VAT(INCLUDED) <span> $</span>
+
+          <div className="total summary-costs">
+            SHIPPING <span> $ {shipping}</span>
           </div>
-          <div className="summary-costs">
-            GRAND TOTAL <span> $</span>
+          <div className="total summary-costs">
+            VAT(INCLUDED) <span> $ {tax}</span>
+          </div>
+
+          <div className="total summary-costs">
+            GRAND TOTAL <span className="grandTotal"> $ {grandTotal}</span>
           </div>
         </div>
-        <button className="orange-btn">CONTINUE &#38; PAY</button>
+        <button onClick={handleOpen} className="orange-btn-checkout">
+          CONTINUE &#38; PAY
+        </button>
       </div>
     </>
   );

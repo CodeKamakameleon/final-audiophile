@@ -39,6 +39,9 @@ export const Category = () => {
                 />
               </div>
               <div className="category-info">
+                <div className="category-new">
+                  {product.new ? "New Product" : ""}
+                </div>
                 <h3 className="category-header">{product.name}</h3>
                 <div className="category-description">
                   {product.description}

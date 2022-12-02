@@ -1,13 +1,14 @@
 .summary {
   display: flex;
   flex-direction: column;
+
   background-color: white;
   border-radius: 8px;
   margin-top: 50px;
 
-  width: 30%;
+  width: fit-content;
   height: fit-content;
-  padding: 30px;
+  padding: 30px 50px 30px 50px;
 }
 
 .summary-header {
@@ -34,7 +35,21 @@
 }
 
 .summary-quantity {
-  font-size: small;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: medium;
   font-weight: bold;
   color: gray;
+}
+
+.orange-btn-checkout {
+  padding: 10px 20px 10px 20px;
+  background-color: #d87d4a;
+  color: white;
+  border: none;
+  width: 100%;
+  text-decoration: none;
+  font-size: medium;
+  margin-top: 10px;
 }

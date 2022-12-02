@@ -50,6 +50,7 @@
   padding: 10px;
   padding-bottom: 20px;
   text-decoration: none;
+  font-size: xx-large;
   color: white;
 }
 
@@ -136,6 +137,7 @@
     justify-content: flex-start;
     padding-left: 20px;
     padding-top: 15px;
+    font-size: medium;
   }
 
   .nav-desktop {

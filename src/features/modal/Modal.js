@@ -83,14 +83,16 @@ export const Modal = () => {
             </div>
           </div>
         ))}
-        {cart.products.map((product) => (
-          <div className="total" key={product.id}>
-            TOTAL <span> ${cart.total}</span>
-          </div>
-        ))}
-        <Link to="/checkout" className="checkout-btn">
-          CHECKOUT
-        </Link>
+
+        <div className="total">
+          TOTAL <span> ${cart.total}</span>
+        </div>
+
+        <div className="checkout-btn-container">
+          <Link to="/checkout" className="checkout-btn">
+            CHECKOUT
+          </Link>
+        </div>
       </div>
     </div>
   );
