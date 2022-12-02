@@ -32,23 +32,11 @@ export const Modal = () => {
     dispatch(updateQuantity(payload));
   };
 
-  // const totalPrice = () => {
-  //   dispatch(updateTotal());
-  // };
-
-  // const handleCancel = () => {
-  //   dispatch(handleModalClosed());
-  // };
-
-  // const modalIsOpen = () => {
-  //   dispatch(handleModalOpen());
-  // };
-
   const handleClear = () => {
     dispatch(deleteAll());
   };
 
-  console.log(cart);
+  // console.log(cart);
 
   return (
     <div className={clsx(`modal ${isOpen ? "modalIsOpen" : ""}`)}>

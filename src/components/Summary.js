@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { toggleModal } from "../features/modal/modalSlice";
+import { toggleModal2 } from "../features/modal/modal2slice";
 
 export const Summary = () => {
   const cart = useSelector((state) => state.cart);
-  console.log(cart);
+  // console.log(cart);
 
   const tax = cart.total * 0.1;
 
@@ -15,7 +15,7 @@ export const Summary = () => {
   const dispatch = useDispatch();
 
   const handleOpen = () => {
-    dispatch(toggleModal());
+    dispatch(toggleModal2());
   };
 
   return (
@@ -49,7 +49,7 @@ export const Summary = () => {
             SHIPPING <span> $ {shipping}</span>
           </div>
           <div className="total summary-costs">
-            VAT(INCLUDED) <span> $ {tax}</span>
+            VAT <br /> (INCLUDED) <span> $ {tax}</span>
           </div>
 
           <div className="total summary-costs">
