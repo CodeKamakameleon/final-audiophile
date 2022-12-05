@@ -34,6 +34,10 @@
   flex-direction: column;
 }
 
+.price {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .summary-quantity {
   display: flex;
   width: 100%;
@@ -44,6 +48,9 @@
 }
 
 .orange-btn-checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px 10px 20px;
   background-color: #d87d4a;
   color: white;

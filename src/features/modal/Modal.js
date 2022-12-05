@@ -58,7 +58,7 @@ export const Modal = () => {
               />
               <div className="modal-block">
                 <div className="modal-name">{product.shortName}</div>
-                <div>${product.price}</div>
+                <div className="price">${product.price}</div>
               </div>
             </div>
             <div className="modal-counter">
